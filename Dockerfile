@@ -122,6 +122,7 @@ RUN mkdir -p /home/renderer/src \
 
 # Start running
 COPY run.sh /
+RUN chmod +x run.sh
 ENTRYPOINT ["/run.sh"]
 CMD []
 
